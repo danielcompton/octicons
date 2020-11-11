@@ -18,7 +18,7 @@ describe Jekyll::Octicons do
   describe "rendering" do
     it "renders the svg" do
       output = render("{% octicon mark-github height:32 %}")
-      assert_match /<svg.*octicon-mark-github.*/, output
+      assert_match /<svg.*octicon-mark-github>/, output
       assert_match /<svg.*width="32".*/, output
     end
 
